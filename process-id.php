@@ -7,7 +7,7 @@
     $savestring=$regName.PHP_EOL;
     fwrite($fp,$savestring);
     fclose($fp);
-    $urlist=file("linklist23.txt");
+    $urlist=file("linkList.txt");
     $nl=count($urlist);
     $np=rand(0,$nl-1);
     $url=trim($urlist[$np]);
