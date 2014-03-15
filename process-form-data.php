@@ -1,0 +1,43 @@
+<?php
+    session_start();
+    $id=$_COOKIE['id'];
+    $age=$_POST['age'];
+    $sex=$_POST['sex'];
+    $course=$_POST['course'];
+    $att4=$_POST['att4'];
+    $att5=$_POST['att5'];
+    $att6=$_POST['att6'];
+    $att7a=$_POST['att7a'];
+    $att7b=$_POST['att7b'];
+    $att7c=$_POST['att7c'];
+    $att7d=$_POST['att7d'];
+    $att7e=$_POST['att7e'];
+    $att7f=$_POST['att7f'];
+    $att7g=$_POST['att7g'];
+    $att7h=$_POST['att7h'];
+    $att7i=$_POST['att7i'];
+    $att7j=$_POST['att7j'];
+    $att8=$_POST['att8'];
+    $att9=$_POST['att9'];
+    $att10=$_POST['att10'];
+    $att11=$_POST['att11'];
+    $att12a=$_POST['att12a'];
+    $att12b=$_POST['att12b'];
+    $att12c=$_POST['att12c'];
+    $att12d=$_POST['att12d'];
+    $att12e=$_POST['att12e'];
+    $att12f=$_POST['att12f'];
+    $att12g=$_POST['att12g'];
+    $att12h=$_POST['att12h'];
+    $att13=$_POST['att13'];
+    $att14=$_POST['att14'];
+    $att15=$_POST['att15'];
+    $att16=$_POST['att16'];
+    $att17=$_POST['att17'];
+    $att18=$_POST['att18'];
+    $fp=fopen("formdata.txt", "a");
+    $savestring=$id.",".$age.",".$sex.",".$course.",".$att4.",".$att5.",".$att6.",".$att7a.",".$att7b.",".$att7c.",".$att7d.",".$att7e.",".$att7f.",".$att7g.",".$att7h.",".$att7i.",".$att7j.",".$att8.",".$att9.",".$att10.",".$att11.",".$att12a.",".$att12b.",".$att12c.",".$att12d.",".$att12e.",".$att12f.",".$att12g.",".$att12h.",".$att13.",".$att14.",".$att15.",".$att16.",".$att17.",".$att18.PHP_EOL;
+    fwrite($fp,$savestring);
+    fclose($fp);
+    echo"<h1>Thank you for your participation. If you are interested in the outcome of this research please email me.</h1>"
+?>
