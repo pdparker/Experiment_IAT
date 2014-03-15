@@ -4,7 +4,7 @@ Experiment with IAT
 Structure of the Experiment
 -------------------------
 
-* Participants will land on the *LaunchPage.html* which will have typical info sheet and consent.
+* Participants will land on the [Launch Page](LaunchPage.html) which will have typical info sheet and consent.
 * If they consent they will fill out a unique ID and click *submit*  and sent to 1 of three random pages.
 * The ID which will be saved to a $_COOKIE in the *process-id.php* file.
 * They will then go through the relevant RCT condition (A set of pictures - only biased condition works ATM).
