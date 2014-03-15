@@ -2,7 +2,7 @@ Experiment with IAT
 ====================
 
 Structure of the Experiment
-——————————————
+-------------------------
 
 * Participants will land on the *LaunchPage.html* which will have typical info sheet and consent.
 * If they consent they will fill out a unique ID and click *submit*  and sent to 1 of three random pages.
@@ -13,7 +13,7 @@ Structure of the Experiment
 
 
 What I Cannot Do
-————————
+----------------
 Basically I cannot stick all this together or figure out how to pass the *ID* variable to IAT and form. So I need to go LauchPage -> launchPage of RCT condition -> images -> IAT -> form. I have most of it down but the link from IAT to form.
 
 I also cannot:
