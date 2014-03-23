@@ -12,6 +12,7 @@
     $nl=count($urlist);
     $np=rand(0,$nl-1);
     $url=trim($urlist[$np]);
+    setcookie("arm", $url, time()+3600, '/', NULL, 0 );
     header("Location: $url");
     exit;
 ?>

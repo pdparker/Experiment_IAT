@@ -1,6 +1,7 @@
 <?php
     session_start();
     $id=$_COOKIE['id'];
+    $arm=$_COOKIE['arm'];
     $age=$_POST['age'];
     $sex=$_POST['sex'];
     $course=$_POST['course'];
@@ -36,7 +37,7 @@
     $att17=$_POST['att17'];
     $att18=$_POST['att18'];
     $fp=fopen("formdata.txt", "a");
-    $savestring=$id.",".$age.",".$sex.",".$course.",".$att4.",".$att5.",".$att6.",".$att7a.",".$att7b.",".$att7c.",".$att7d.",".$att7e.",".$att7f.",".$att7g.",".$att7h.",".$att7i.",".$att7j.",".$att8.",".$att9.",".$att10.",".$att11.",".$att12a.",".$att12b.",".$att12c.",".$att12d.",".$att12e.",".$att12f.",".$att12g.",".$att12h.",".$att13.",".$att14.",".$att15.",".$att16.",".$att17.",".$att18.PHP_EOL;
+    $savestring=$id.",".$arm.",".$age.",".$sex.",".$course.",".$att4.",".$att5.",".$att6.",".$att7a.",".$att7b.",".$att7c.",".$att7d.",".$att7e.",".$att7f.",".$att7g.",".$att7h.",".$att7i.",".$att7j.",".$att8.",".$att9.",".$att10.",".$att11.",".$att12a.",".$att12b.",".$att12c.",".$att12d.",".$att12e.",".$att12f.",".$att12g.",".$att12h.",".$att13.",".$att14.",".$att15.",".$att16.",".$att17.",".$att18.PHP_EOL;
     fwrite($fp,$savestring);
     fclose($fp);
     phpinfo();

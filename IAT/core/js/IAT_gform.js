@@ -20,7 +20,7 @@ function initialize()
 		document.title = input.active + " IAT";
 		$.getJSON("templates/"+input.active+"/input.txt", function(data) { 
 			template = data;
-			$.get("core/instruct0.html", function(data) {
+			$.get("core/instruct1.html", function(data) {
 				$("#instructions").html(data);
                   $("#subID").val($.cookie("id"));
                   console.log($.cookie("id") + ", " + $("#subID").val());
