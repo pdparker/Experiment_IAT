@@ -22,8 +22,8 @@ function initialize()
 			template = data;
 			$.get("core/instruct0.html", function(data) {
 				$("#instructions").html(data);
-                  $("#subID").val($.cookie("regName"));
-                  console.log($.cookie("regName") + ", " + $("#subID").val());
+                  $("#subID").val($.cookie("id"));
+                  console.log($.cookie("id") + ", " + $("#subID").val());
 			});
 		});
 	});
