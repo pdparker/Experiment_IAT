@@ -1,11 +1,15 @@
 <html>
-<!-- At the moment this just links to google nad has fake images in it BUT I will integrate this later. -->
+<!-- At the moment this just links to directly to form nad has fake images in it BUT I will integrate this later. -->
 	<head>
 		<script type="text/javascript">
 			var image1 = new Image()
 			image1.src = "img/bf1.jpg"
 			var image2 = new Image()
 			image2.src = "img/bf2.jpg"
+		</script>
+		<script>
+				setInterval(function(){alert("Ready to move on?");
+			   		window.location="form.html";},10000);
 		</script>
 	</head>
 	<body>
@@ -20,19 +24,26 @@
 		                step++;
 		            else
 		                step=1;
-		            setTimeout("slideit()",5000);
+		            setTimeout("slideit()",3000);
 		        }
 		        slideit();
 		</script>
-		<script type="text/javascript">
-			<!--
-			function Redirect()
-			{
-			    window.location="http://www.google.com";
-			}
-			setTimeout('Redirect()', 10000);
-			//-->
-</script>
-<p>You will be redirected at the end of the images.</p>
+	<p>You will be redirected at the end of the images.</p>
+	<script language="JavaScript">
+		<!--
+		var r_text = new Array ();
+		r_text[0] = "All the leaves are brown";
+		r_text[1] = "And the sky is grey";
+		r_text[2] = "I've been for a walk";
+		r_text[3] = "On a winter's day";
+		r_text[4] = "I'd be safe and warm";
+		r_text[5] = "If I was in L.A.";
+		r_text[6] = "California dreaming, On such a winter's day";
+		var i = Math.floor(7*Math.random())
+
+		document.write(r_text[i]);
+
+		//-->
+	</script>
 	</body>
 </html>
