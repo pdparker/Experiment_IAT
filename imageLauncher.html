@@ -1,0 +1,38 @@
+<html>
+<!-- At the moment this just links to google nad has fake images in it BUT I will integrate this later. -->
+	<head>
+		<script type="text/javascript">
+			var image1 = new Image()
+			image1.src = "img/bf1.jpg"
+			var image2 = new Image()
+			image2.src = "img/bf2.jpg"
+		</script>
+	</head>
+	<body>
+	<h1>Please look at these images following the instructions below.</h1>
+	<p><img src="images/pentagg.jpg" width="500" height="300" name="slide" /></p>
+		<script type="text/javascript">
+		        var step=1;
+		        function slideit()
+		        {
+		            document.images.slide.src = eval("image"+step+".src");
+		            if(step<2)
+		                step++;
+		            else
+		                step=1;
+		            setTimeout("slideit()",5000);
+		        }
+		        slideit();
+		</script>
+		<script type="text/javascript">
+			<!--
+			function Redirect()
+			{
+			    window.location="http://www.google.com";
+			}
+			setTimeout('Redirect()', 10000);
+			//-->
+</script>
+<p>You will be redirected at the end of the images.</p>
+	</body>
+</html>
