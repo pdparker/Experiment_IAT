@@ -1,0 +1,38 @@
+<html>
+<!-- At the moment this just links to directly to form nad has fake images in it BUT I will integrate this later. -->
+<!-- SetInterval function creates pop-p alter that moves individuals to the next section. -->
+	<head>
+		<script type="text/javascript">
+			var image1 = new Image()
+			image1.src = "../img/bf1.jpg"
+			var image2 = new Image()
+			image2.src = "../img/bf2.jpg"
+		</script>
+		<script>
+				setInterval(function(){alert("Ready to move on?");
+			   		window.location="../IAT";},10000);
+		</script>
+	</head>
+	<body>
+	<center>
+		<h1>Please look at these images following the instructions below.</h1>
+	</center>
+	<center>
+		<p><img src="images/pentagg.jpg" width="500" height="300" name="slide" /></p>
+	</center>
+		<script type="text/javascript">
+		        var step=1;
+		        function slideit()
+		        {
+		            document.images.slide.src = eval("image"+step+".src");
+		            if(step<2)
+		                step++;
+		            else
+		                step=1;
+		            setTimeout("slideit()",3000);
+		        }
+		        slideit();
+		</script>
+	<center><h2>You will be redirected at the end of the images.</h2><br></center>
+	</body>
+</html>
