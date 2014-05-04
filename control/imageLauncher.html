@@ -4,28 +4,103 @@
 	<head>
 		<script type="text/javascript">
 			var image1 = new Image()
-			image1.src = "../img/bf1.jpg"
+			image1.src = "../img/control1.jpg"
 			var image2 = new Image()
-			image2.src = "../img/bf2.jpg"
+			image2.src = "../img/control2.jpg"
+			var image3 = new Image()
+			image3.src = "../img/control3.jpg"
+			var image4 = new Image()
+			image4.src = "../img/control4.jpg"
+			var image5 = new Image()
+			image5.src = "../img/control5.jpg"
+			var image6 = new Image()
+			image6.src = "../img/control6.jpg"
+			var image7 = new Image()
+			image7.src = "../img/control7.jpg"
+			var image8 = new Image()
+			image8.src = "../img/control8.jpg"
+			var image9 = new Image()
+			image9.src = "../img/control9.jpg"
+			var image10 = new Image()
+			image10.src = "../img/control10.jpg"
+			var image11 = new Image()
+			image11.src = "../img/control11.jpg"
+			var image12 = new Image()
+			image12.src = "../img/control12.jpg"
+			var image13 = new Image()
+			image13.src = "../img/control13.jpg"
+			var image14 = new Image()
+			image14.src = "../img/control14.jpg"
+			var image15 = new Image()
+			image15.src = "../img/control15.jpg"
+			var image16 = new Image()
+			image16.src = "../img/control16.jpg"
+			var image17 = new Image()
+			image17.src = "../img/control17.jpg"
+			var image18 = new Image()
+			image18.src = "../img/control18.jpg"
+			var image19 = new Image()
+			image19.src = "../img/control19.jpg"
+			var image20 = new Image()
+			image20.src = "../img/control20.jpg"
 		</script>
 		<script>
 				setInterval(function(){alert("Ready to move on?");
-			   		window.location="../IAT";},10000);
+			   		window.location="../IAT";},60000);
 		</script>
+
+		<!-- Alternative to pop-up -->
+
+		<script type="text/javascript">
+		<!--
+
+		////////////////////////////////////////////
+		// CHANGE THE SECONDS DELAY BELOW TO //
+		// THE NUMBER OF SECONDS YOU WANT BEFORE //
+		// THE LINKS APPEAR //
+		////////////////////////////////////////////
+
+
+		$secondsdelay = 60;
+
+		////////////////////////////////////////////
+		// DO NOT EDIT THIS SECTION //
+		////////////////////////////////////////////
+
+
+		function unhide(divID) {
+		var item = document.getElementById(divID);
+		if (item) {
+		item.className=(item.className=='hidden')?'unhidde n':'hidden';
+		}
+		}
+
+
+		$delay = $secondsdelay*1000;
+
+		window.setTimeout("unhide('links')",$delay);
+
+		//--></script>
+		<!--Add alternative to pop-up for those who have pop-ups disabled -->
+		<STYLE TYPE="text/css">
+		.hidden { visibility: hidden; }
+		.unhidden { visibility: visible; } 
+		</STYLE>
 	</head>
+
 	<body>
 	<center>
 		<h1>Please look at these images following the instructions below.</h1>
 	</center>
 	<center>
-		<p><img src="images/pentagg.jpg" width="500" height="300" name="slide" /></p>
+		<p><img src="images/pentagg.jpg" width="500" height="500" name="slide" /></p>
 	</center>
 		<script type="text/javascript">
 		        var step=1;
 		        function slideit()
 		        {
 		            document.images.slide.src = eval("image"+step+".src");
-		            if(step<2)
+		            if(step<20)
 		                step++;
 		            else
 		                step=1;
@@ -33,6 +108,13 @@
 		        }
 		        slideit();
 		</script>
-	<center><h2>You will be redirected at the end of the images.</h2><br></center>
+	<center><h2>You will be redirected at the end of the images. If you are not please click <b>next</b> when it appears... </h2><br></center>
+
+	<!--Next button will appear after 10 secs -->
+	<div id="links" class="hidden">
+		<form method="link" action="../IAT">
+			<center><input type="submit" value="NEXT"/></center>
+    	</form>
+    </div>
 	</body>
 </html>
