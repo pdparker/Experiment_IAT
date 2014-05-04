@@ -12,7 +12,46 @@
 				setInterval(function(){alert("Ready to move on?");
 			   		window.location="../IAT";},10000);
 		</script>
+
+		<!-- Alternative to pop-up -->
+
+		<script type="text/javascript">
+		<!--
+
+		////////////////////////////////////////////
+		// CHANGE THE SECONDS DELAY BELOW TO //
+		// THE NUMBER OF SECONDS YOU WANT BEFORE //
+		// THE LINKS APPEAR //
+		////////////////////////////////////////////
+
+
+		$secondsdelay = 9;
+
+		////////////////////////////////////////////
+		// DO NOT EDIT THIS SECTION //
+		////////////////////////////////////////////
+
+
+		function unhide(divID) {
+		var item = document.getElementById(divID);
+		if (item) {
+		item.className=(item.className=='hidden')?'unhidde n':'hidden';
+		}
+		}
+
+
+		$delay = $secondsdelay*1000;
+
+		window.setTimeout("unhide('links')",$delay);
+
+		//--></script>
+		<!--Add alternative to pop-up for those who have pop-ups disabled -->
+		<STYLE TYPE="text/css">
+		.hidden { visibility: hidden; }
+		.unhidden { visibility: visible; } 
+		</STYLE>
 	</head>
+
 	<body>
 	<center>
 		<h1>Please look at these images following the instructions below.</h1>
@@ -33,6 +72,13 @@
 		        }
 		        slideit();
 		</script>
-	<center><h2>You will be redirected at the end of the images.</h2><br></center>
+	<center><h2>You will be redirected at the end of the images. If you are not please click <b>next</b> when it appears... </h2><br></center>
+
+	<!--Next button will appear after 10 secs -->
+	<div id="links" class="hidden">
+		<form method="link" action="../IAT">
+			<center><input type="submit" value="NEXT"/></center>
+    	</form>
+    </div>
 	</body>
 </html>
