@@ -54,6 +54,7 @@
                 <input type="radio" name="att6" value="5" id="att6"/>5 (strongly agree)
                 <input type="radio" name="att6" value="NA" id="att6" checked="checked"/> Don't Know
                 <br /><br />
+
                 <label>7. If you have encountered gender bias during your medical education, can you give an example?</label><br />
                 <textarea name="att7" cols="30" rows="4" id="att7">N/A</textarea>
                 <br /><br />
@@ -73,10 +74,6 @@
 
                     <p>10. The following anatomical statements are gender biased: <b>(0=strongly disagree)</b> to <b>(5=strongly agree)</b>:</p>
                     <table>
-                    <tr>
-                        <td></td>
-                        <td>0=strongly disagree     5=strongly agree</td>
-                    </tr>
                     <tr>
                         <td>a) The clitoris is a diminutive form of the penis</td>
                         <td>
@@ -215,13 +212,153 @@
                     <input type="radio" name="att14" value="NA" id="att14" checked="checked"/> Don't Know
                     <br /><br />
 
-                    <label>We may want to do research like this again in the future and if so you may be invited to participate. To ensure that we can match your responses we need a code that is unique to you but that cannot be used to identify you personally. Please provide your first initial, the last letter of your last name, the first initial of your mother's maiden name, and your day and month of birth.</label>
-                    <br />
-                    First Initial:<textarea name="att15a" cols="1" rows="1" id="att15a">Z</textarea>
-                    Last Initial:<textarea name="att15b" cols="1" rows="1" id="att15b">Z</textarea>
-                    Maiden Initial:<textarea name="att15c" cols="1" rows="1" id="att15c">Z</textarea>
-                    Day of Birth:<textarea name="att15d" cols="2" rows="1" id="att15d">31</textarea>
-                    Month of Birth:<textarea name="att15e" cols="2" rows="1" id="att15e">12</textarea>
+                    <label>We may want to do research like this again in the future and if so you may be invited to participate. To ensure that we can match your responses we need a code that is unique to you but that cannot be used to identify you personally. Please provide your first initial, the last letter of your last name, the first initial of your mother's maiden name, and your day and month of birth.
+                    <br /><br />
+                    For example, if your name was Joan Smith, you were born on the 12/12/1984, and your Mother's madien name was Jill James your code would be <b>JHJ1212</b></label>
+                    <br /><br />
+                    First Initial:
+                    <select name="fi" id="fi">
+                        <option value="NA">NA</option>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                        <option value="d">d</option>
+                        <option value="e">e</option>
+                        <option value="f">f</option>
+                        <option value="g">g</option>
+                        <option value="h">h</option>
+                        <option value="i">i</option>
+                        <option value="j">j</option>
+                        <option value="k">k</option>
+                        <option value="l">l</option>
+                        <option value="m">m</option>
+                        <option value="n">n</option>
+                        <option value="o">o</option>
+                        <option value="p">p</option>
+                        <option value="q">q</option>
+                        <option value="r">r</option>
+                        <option value="s">s</option>
+                        <option value="t">t</option>
+                        <option value="u">u</option>
+                        <option value="v">v</option>
+                        <option value="w">w</option>
+                        <option value="x">x</option>
+                        <option value="y">y</option>
+                        <option value="z">z</option>
+                    <select>
+                    Last Initial:
+                    <select name="li" id="li">
+                        <option value="NA">NA</option>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                        <option value="d">d</option>
+                        <option value="e">e</option>
+                        <option value="f">f</option>
+                        <option value="g">g</option>
+                        <option value="h">h</option>
+                        <option value="i">i</option>
+                        <option value="j">j</option>
+                        <option value="k">k</option>
+                        <option value="l">l</option>
+                        <option value="m">m</option>
+                        <option value="n">n</option>
+                        <option value="o">o</option>
+                        <option value="p">p</option>
+                        <option value="q">q</option>
+                        <option value="r">r</option>
+                        <option value="s">s</option>
+                        <option value="t">t</option>
+                        <option value="u">u</option>
+                        <option value="v">v</option>
+                        <option value="w">w</option>
+                        <option value="x">x</option>
+                        <option value="y">y</option>
+                        <option value="z">z</option>
+                    <select>
+                    Maiden Initial:
+                    <select name="mi" id="mi">
+                        <option value="NA">NA</option>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                        <option value="d">d</option>
+                        <option value="e">e</option>
+                        <option value="f">f</option>
+                        <option value="g">g</option>
+                        <option value="h">h</option>
+                        <option value="i">i</option>
+                        <option value="j">j</option>
+                        <option value="k">k</option>
+                        <option value="l">l</option>
+                        <option value="m">m</option>
+                        <option value="n">n</option>
+                        <option value="o">o</option>
+                        <option value="p">p</option>
+                        <option value="q">q</option>
+                        <option value="r">r</option>
+                        <option value="s">s</option>
+                        <option value="t">t</option>
+                        <option value="u">u</option>
+                        <option value="v">v</option>
+                        <option value="w">w</option>
+                        <option value="x">x</option>
+                        <option value="y">y</option>
+                        <option value="z">z</option>
+                    <select>
+                    Day of Birth:
+                    <select name="day" id="day">
+                        <option value="NA">NA</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    <select>
+                    Month of Birth:
+                    <select name="month" id="month">
+                        <option value="NA">NA</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    <select>
                 <br /><br />
 
         </fieldset><br />

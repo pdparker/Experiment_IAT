@@ -23,12 +23,21 @@
     $att12=$_POST['att12'];
     $att13=$_POST['att13'];
     $att14=$_POST['att14'];
+    $fi=$_POST['fi'];
+    $li=$_POST['li'];
+    $mi=$_POST['mi'];
+    $day=$_POST['day'];
+    $month=$_POST['month'];
+    $code=$fi.$li.$mi.$day.$month;
+
     $my_file = "./output/".$id.".txt";
     $fp = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
    // $fp=fopen("formdata.txt", "a");
-    $savestring=$id.",".$arm.",".$age.",".$sex.",".$year.",".$att4.",".$att5.",".$att6.",".$att7.",".$att8.",".$att9.",".$att10a.",".$att10b.",".$att10c.",".$att10d.",".$att10e.",".$att10f.",".$att10g.",".$att10h.",".$att11.",".$att12.",".$att13.",".$att14.PHP_EOL;
+    $savestring=$id.",".$arm.",".$age.",".$sex.",".$year.",".$att4.",".$att5.",".$att6.",".$att7.",".$att8.",".$att9.",".$att10a.",".$att10b.",".$att10c.",".$att10d.",".$att10e.",".$att10f.",".$att10g.",".$att10h.",".$att11.",".$att12.",".$att13.",".$att14.",".$code.PHP_EOL;
     fwrite($fp,$savestring);
     fclose($fp);
-//    phpinfo();
+
+   // phpinfo();
+
     echo"<h1>Thank you for your participation. If you are interested in the outcome of this research please email me.</h1>"
 ?>
