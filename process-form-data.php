@@ -39,5 +39,42 @@
 
    // phpinfo();
 
-    echo"<h1>Thank you for your participation. If you are interested in the outcome of this research please email me.</h1>"
-?>
+    ?>
+
+<html>
+    <head>
+        <title>Gender in medicine</title>
+        <!-- The following tag allows for website to be viewed on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="../../assets/js/html5shiv.js"></script>
+        <script src="../../assets/js/respond.min.js"></script>
+        <![endif]-->
+        <!-- Custom styles for this template -->
+        <link href="non-responsive.css" rel="stylesheet">
+    </head>
+    <body>
+     <div class="container">
+
+         <div class="page-header">
+            <h1>Thank you for your participation. If you are interested in the outcome of this research please  <a href="mailto:rbp774@uowmail.edu.au">email</a> me.</h1> 
+      </div>
+</div>
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>    
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
+
