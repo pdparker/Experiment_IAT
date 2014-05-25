@@ -25,7 +25,7 @@
 
       </div>
 
-    <FORM NAME="web_form" id="web_form" method="post" action="process-form-data.php">
+    <FORM NAME="web_form" id="web_form" method="post" action="process-form-data_pg.php">
     <fieldset>
 			<legend>Demographics</legend>
 
@@ -54,9 +54,9 @@
                     $np=rand(0,$nl-1);
                     $Rtext=trim($text[$np]);
                     print "<label>4. A 35 year old $Rtext office worker describes increasingly frequent episodes of feeling anxious and light-headed with a racing heart and a fine hand tremor. She/he also described recent weight loss and some work-related stresses.</label>
-                        <input type='hidden' name='4sex' value='$Rtext'>"
+                        <input type='hidden' name='sex4' value='$Rtext'>"
                 ?>
-                                <input type='hidden' name='att4a' value='NA' checked="checked">
+                <input type='hidden' name='att4a' value='NA' checked="checked">
                 <input type='hidden' name='att4b' value='NA' checked="checked">
                 <input type='hidden' name='att4c' value='NA' checked="checked">
                 <input type='hidden' name='att4d' value='NA' checked="checked">
@@ -126,7 +126,7 @@
                     $Rtext=trim($text[$np]);
                     print "<label>5. A 45 year-old $Rtext reports an episode of chest pain while sitting on the sofa watching a morning television program. The pain was associated with shortness of breath and a sensation of feeling frightened, sweaty and shaky.
                         </label>
-                        <input type='hidden' name='5sex' value='$Rtext'>"
+                        <input type='hidden' name='sex5' value='$Rtext'>"
                 ?>
                 <input type='hidden' name='att5a' value='NA' checked="checked">
                 <input type='hidden' name='att5b' value='NA' checked="checked">
@@ -197,7 +197,7 @@
                     $np=rand(0,$nl-1);
                     $Rtext=trim($text[$np]);
                     print "<label>6. A 21 year old $Rtext casual worker at a department store presents for a post-operative check-up. She/he was discharged from hospital a week ago after a 3 day admission for surgical repair of a fractured ankle. This morning she/he experienced an episode of shortness of breath associated with a feeling of a racing heart and chest heaviness. She/he is concerned and anxious about the impact of the injury on her fitness and capacity to return to work.</label>
-                        <input type='hidden' name='6sex' value='$Rtext'>"
+                        <input type='hidden' name='sex6' value='$Rtext'>"
                 ?>
                 <input type='hidden' name='att6a' value='NA' checked="checked">
                 <input type='hidden' name='att6b' value='NA' checked="checked">
@@ -427,11 +427,11 @@
                 <input type="radio" name="att11" value="NA" id="att11" checked="checked"/> Don't Know
                 <br /><br />
 
-                <label>7. If you have encountered gender bias during your medical education, can you give an example?</label><br />
+                <label>12. If you have encountered gender bias during your medical education, can you give an example?</label><br />
                 <textarea name="att12" cols="30" rows="4" id="att7" maxlength="1000">N/A</textarea>
                 <br /><br />
 
-                <label> I have encountered evidence of gender bias during my <b>medical</b> placements.</label><br />
+                <label>13. I have encountered evidence of gender bias during my <b>medical</b> placements.</label><br />
                 <input type="radio" name="att13" value="0" id="att13"/> 0 (strongly disagree)
                 <input type="radio" name="att13" value="1" id="att13"/> 1
                 <input type="radio" name="att13" value="2" id="att13"/> 2
@@ -441,12 +441,11 @@
                 <input type="radio" name="att13" value="NA" id="att13" checked="checked"/> Don't Know
                 <br /><br />
 
-                <label> If you have encountered gender bias during your medical placements, can you give an example?</label><br />
-                <textarea name="att14" cols="30" rows="4" id="att7" maxlength="1000">N/A</textarea>
+                <label>14. If you have encountered gender bias during your medical placements, can you give an example?</label><br />
+                <textarea name="att14" cols="30" rows="4" id="att14" maxlength="1000">N/A</textarea>
                 <br /><br />
 
-
-                <label>8. I have encountered evidence of gender bias in anatomy <b>textbooks.</b></label><br />
+                <label>15. I have encountered evidence of gender bias in anatomy <b>textbooks.</b></label><br />
                 <input type="radio" name="att15" value="0" id="att15"/> 0 (strongly disagree)
                 <input type="radio" name="att15" value="1" id="att15"/> 1
                 <input type="radio" name="att15" value="2" id="att15"/> 2
@@ -455,293 +454,293 @@
                 <input type="radio" name="att15" value="5" id="att15"/> 5 (strongly agree)
                 <input type="radio" name="att15" value="NA" id="att15" checked="checked"/> Don't Know
                 <br /><br />
-                <label>9. If you have encountered evidence of gender bias in anatomy textbooks, can you give an example?</label><br />
+                <label>16. If you have encountered evidence of gender bias in anatomy textbooks, can you give an example?</label><br />
                 <textarea name="att16" cols="30" rows="4" id="att9" maxlength="1000">N/A</textarea>
                 <br /><br />
 
-                    <label>10. The following anatomical statements are gender biased: <b>(0=strongly disagree)</b> to <b>(5=strongly agree)</b>:</label>
+                <label>17. The following anatomical statements are gender biased: <b>(0=strongly disagree)</b> to <b>(5=strongly agree)</b>:</label>
 
-                    <table class="table table-striped">
-                    <tr>
-                        <th></th>
-                        <th>Strongly Disagree</th>
-                        <th>Disagree</th>
-                        <th>Somewhat Disagree</th>
-                        <th>Somewhat Agree</th>
-                        <th>Agree</th>
-                        <th>Strongly Agree</th>
-                        <th>Don't Know</th>
-                    </tr>
+                <table class="table table-striped">
+                <tr>
+                    <th></th>
+                    <th>Strongly Disagree</th>
+                    <th>Disagree</th>
+                    <th>Somewhat Disagree</th>
+                    <th>Somewhat Agree</th>
+                    <th>Agree</th>
+                    <th>Strongly Agree</th>
+                    <th>Don't Know</th>
+                </tr>
 
-                    <tr>
-                        <td>a) The clitoris is a diminutive form of the penis</td>
-                        <td><input type="radio" name="att17a" value="0" id="att17a"/></td>
-                        <td><input type="radio" name="att17a" value="1" id="att17a"/></td>
-                        <td><input type="radio" name="att17a" value="2" id="att17a"/></td>
-                        <td><input type="radio" name="att17a" value="3" id="att17a"/></td>
-                        <td><input type="radio" name="att17a" value="4" id="att17a"/></td>
-                        <td><input type="radio" name="att17a" value="5" id="att17a"/></td>
-                        <td><input type="radio" name="att17a" value="NA" id="att17a" checked="checked"/></td>
-                    </tr>
-                    <tr>
-                        <td>b) The clitoris and the penis are erectile sexual organs</td>
-                        <td><input type="radio" name="att17b" value="0" id="att17b"/></td>
-                        <td><input type="radio" name="att17b" value="1" id="att17b"/></td>
-                        <td><input type="radio" name="att17b" value="2" id="att17b"/></td>
-                        <td><input type="radio" name="att17b" value="3" id="att17b"/></td>
-                        <td><input type="radio" name="att17b" value="4" id="att17b"/></td>
-                        <td><input type="radio" name="att17b" value="5" id="att17b"/></td>
-                        <td><input type="radio" name="att17b" value="NA" id="att17b" checked="checked"/></td>
-                    </tr>
-                    <tr>
-                        <td>c) The penis is the enlarged form of the clitoris</td>
-                        <td><input type="radio" name="att17c" value="0" id="att17c"/></td>
-                        <td><input type="radio" name="att17c" value="1" id="att17c"/></td>
-                        <td><input type="radio" name="att17c" value="2" id="att17c"/></td>
-                        <td><input type="radio" name="att17c" value="3" id="att17c"/></td>
-                        <td><input type="radio" name="att17c" value="4" id="att17c"/></td>
-                        <td><input type="radio" name="att17c" value="5" id="att17c"/></td>
-                        <td><input type="radio" name="att17c" value="NA" id="att17c" checked="checked"/></td>
-                    </tr>
-                    <tr>
-                        <td>d) The clitoris is the analogue to the male penis</td>
-                        <td><input type="radio" name="att17d" value="0" id="att17d"/></td>
-                        <td><input type="radio" name="att17d" value="1" id="att17d"/></td>
-                        <td><input type="radio" name="att17d" value="2" id="att17d"/></td>
-                        <td><input type="radio" name="att17d" value="3" id="att17d"/></td>
-                        <td><input type="radio" name="att17d" value="4" id="att17d"/></td>
-                        <td><input type="radio" name="att17d" value="5" id="att17d"/></td>
-                        <td><input type="radio" name="att17d" value="NA" id="att17d" checked="checked"/></tr> 
-                    </tr>
-                    <tr>
-                        <td>e) The mammary glands are primarily organs of lactation</td>
-                        <td><input type="radio" name="att17e" value="0" id="att17e"/></td>
-                        <td><input type="radio" name="att17e" value="1" id="att17e"/></td>
-                        <td><input type="radio" name="att17e" value="2" id="att17e"/></td>
-                        <td><input type="radio" name="att17e" value="3" id="att17e"/></td>
-                        <td><input type="radio" name="att17e" value="4" id="att17e"/></td>
-                        <td><input type="radio" name="att17e" value="5" id="att17e"/></td>
-                        <td><input type="radio" name="att17e" value="NA" id="att17e" checked="checked"/></tr> 
-                    </tr>
-                    <tr>
-                        <td>f) The mammary glands are secondary sexual organs</td>
-                        <td><input type="radio" name="att17f" value="0" id="att17f"/></td>
-                        <td><input type="radio" name="att17f" value="1" id="att17f"/></td>
-                        <td><input type="radio" name="att17f" value="2" id="att17f"/></td>
-                        <td><input type="radio" name="att17f" value="3" id="att17f"/></td>
-                        <td><input type="radio" name="att17f" value="4" id="att17f"/></td>
-                        <td><input type="radio" name="att17f" value="5" id="att17f"/></td>
-                        <td><input type="radio" name="att17f" value="NA" id="att17f" checked="checked"/></td> 
-                    </tr>
-                    <tr>
-                        <td>g) The penis is a sexual organ</td>
-                        <td><input type="radio" name="att17g" value="0" id="att17g"/></td>
-                        <td><input type="radio" name="att17g" value="1" id="att17g"/></td>
-                        <td><input type="radio" name="att17g" value="2" id="att17g"/></td>
-                        <td><input type="radio" name="att17g" value="3" id="att17g"/></td>
-                        <td><input type="radio" name="att17g" value="4" id="att17g"/></td>
-                        <td><input type="radio" name="att17g" value="5" id="att17g"/></td>
-                        <td><input type="radio" name="att17g" value="NA" id="att17g" checked="checked"/></td> 
-                    </tr>
-                    <tr>
-                        <td>h) The penis is a urogenital organ</td>
-                        <td><input type="radio" name="att17h" value="0" id="att17h"/></td>
-                        <td><input type="radio" name="att17h" value="1" id="att17h"/></td>
-                        <td><input type="radio" name="att17h" value="2" id="att17h"/></td>
-                        <td><input type="radio" name="att17h" value="3" id="att17h"/></td>
-                        <td><input type="radio" name="att17h" value="4" id="att17h"/></td>
-                        <td><input type="radio" name="att17h" value="5" id="att17h"/></td>
-                        <td><input type="radio" name="att17h" value="NA" id="att17h" checked="checked"/></td> 
-                    </tr>
-                    </table><br /><br />
+                <tr>
+                    <td>a) The clitoris is a diminutive form of the penis</td>
+                    <td><input type="radio" name="att17a" value="0" id="att17a"/></td>
+                    <td><input type="radio" name="att17a" value="1" id="att17a"/></td>
+                    <td><input type="radio" name="att17a" value="2" id="att17a"/></td>
+                    <td><input type="radio" name="att17a" value="3" id="att17a"/></td>
+                    <td><input type="radio" name="att17a" value="4" id="att17a"/></td>
+                    <td><input type="radio" name="att17a" value="5" id="att17a"/></td>
+                    <td><input type="radio" name="att17a" value="NA" id="att17a" checked="checked"/></td>
+                </tr>
+                <tr>
+                    <td>b) The clitoris and the penis are erectile sexual organs</td>
+                    <td><input type="radio" name="att17b" value="0" id="att17b"/></td>
+                    <td><input type="radio" name="att17b" value="1" id="att17b"/></td>
+                    <td><input type="radio" name="att17b" value="2" id="att17b"/></td>
+                    <td><input type="radio" name="att17b" value="3" id="att17b"/></td>
+                    <td><input type="radio" name="att17b" value="4" id="att17b"/></td>
+                    <td><input type="radio" name="att17b" value="5" id="att17b"/></td>
+                    <td><input type="radio" name="att17b" value="NA" id="att17b" checked="checked"/></td>
+                </tr>
+                <tr>
+                    <td>c) The penis is the enlarged form of the clitoris</td>
+                    <td><input type="radio" name="att17c" value="0" id="att17c"/></td>
+                    <td><input type="radio" name="att17c" value="1" id="att17c"/></td>
+                    <td><input type="radio" name="att17c" value="2" id="att17c"/></td>
+                    <td><input type="radio" name="att17c" value="3" id="att17c"/></td>
+                    <td><input type="radio" name="att17c" value="4" id="att17c"/></td>
+                    <td><input type="radio" name="att17c" value="5" id="att17c"/></td>
+                    <td><input type="radio" name="att17c" value="NA" id="att17c" checked="checked"/></td>
+                </tr>
+                <tr>
+                    <td>d) The clitoris is the analogue to the male penis</td>
+                    <td><input type="radio" name="att17d" value="0" id="att17d"/></td>
+                    <td><input type="radio" name="att17d" value="1" id="att17d"/></td>
+                    <td><input type="radio" name="att17d" value="2" id="att17d"/></td>
+                    <td><input type="radio" name="att17d" value="3" id="att17d"/></td>
+                    <td><input type="radio" name="att17d" value="4" id="att17d"/></td>
+                    <td><input type="radio" name="att17d" value="5" id="att17d"/></td>
+                    <td><input type="radio" name="att17d" value="NA" id="att17d" checked="checked"/></tr> 
+                </tr>
+                <tr>
+                    <td>e) The mammary glands are primarily organs of lactation</td>
+                    <td><input type="radio" name="att17e" value="0" id="att17e"/></td>
+                    <td><input type="radio" name="att17e" value="1" id="att17e"/></td>
+                    <td><input type="radio" name="att17e" value="2" id="att17e"/></td>
+                    <td><input type="radio" name="att17e" value="3" id="att17e"/></td>
+                    <td><input type="radio" name="att17e" value="4" id="att17e"/></td>
+                    <td><input type="radio" name="att17e" value="5" id="att17e"/></td>
+                    <td><input type="radio" name="att17e" value="NA" id="att17e" checked="checked"/></tr> 
+                </tr>
+                <tr>
+                    <td>f) The mammary glands are secondary sexual organs</td>
+                    <td><input type="radio" name="att17f" value="0" id="att17f"/></td>
+                    <td><input type="radio" name="att17f" value="1" id="att17f"/></td>
+                    <td><input type="radio" name="att17f" value="2" id="att17f"/></td>
+                    <td><input type="radio" name="att17f" value="3" id="att17f"/></td>
+                    <td><input type="radio" name="att17f" value="4" id="att17f"/></td>
+                    <td><input type="radio" name="att17f" value="5" id="att17f"/></td>
+                    <td><input type="radio" name="att17f" value="NA" id="att17f" checked="checked"/></td> 
+                </tr>
+                <tr>
+                    <td>g) The penis is a sexual organ</td>
+                    <td><input type="radio" name="att17g" value="0" id="att17g"/></td>
+                    <td><input type="radio" name="att17g" value="1" id="att17g"/></td>
+                    <td><input type="radio" name="att17g" value="2" id="att17g"/></td>
+                    <td><input type="radio" name="att17g" value="3" id="att17g"/></td>
+                    <td><input type="radio" name="att17g" value="4" id="att17g"/></td>
+                    <td><input type="radio" name="att17g" value="5" id="att17g"/></td>
+                    <td><input type="radio" name="att17g" value="NA" id="att17g" checked="checked"/></td> 
+                </tr>
+                <tr>
+                    <td>h) The penis is a urogenital organ</td>
+                    <td><input type="radio" name="att17h" value="0" id="att17h"/></td>
+                    <td><input type="radio" name="att17h" value="1" id="att17h"/></td>
+                    <td><input type="radio" name="att17h" value="2" id="att17h"/></td>
+                    <td><input type="radio" name="att17h" value="3" id="att17h"/></td>
+                    <td><input type="radio" name="att17h" value="4" id="att17h"/></td>
+                    <td><input type="radio" name="att17h" value="5" id="att17h"/></td>
+                    <td><input type="radio" name="att17h" value="NA" id="att17h" checked="checked"/></td> 
+                </tr>
+                </table><br /><br />
 
-                    <label>11. I believe that medicine is male dominated.</label><br />
-                    <input type="radio" name="att18" value="0" id="att18"/> 0 (strongly disagree)
-                    <input type="radio" name="att18" value="1" id="att18"/> 1
-                    <input type="radio" name="att18" value="2" id="att18"/> 2
-                    <input type="radio" name="att18" value="3" id="att18"/> 3
-                    <input type="radio" name="att18" value="4" id="att18"/> 4
-                    <input type="radio" name="att18" value="5" id="att18"/> 5 (strongly agree)
-                    <input type="radio" name="att18" value="NA" id="att18" checked="checked"/> Don't Know
-                    <br /><br />
+                <label>18. I believe that medicine is male dominated.</label><br />
+                <input type="radio" name="att18" value="0" id="att18"/> 0 (strongly disagree)
+                <input type="radio" name="att18" value="1" id="att18"/> 1
+                <input type="radio" name="att18" value="2" id="att18"/> 2
+                <input type="radio" name="att18" value="3" id="att18"/> 3
+                <input type="radio" name="att18" value="4" id="att18"/> 4
+                <input type="radio" name="att18" value="5" id="att18"/> 5 (strongly agree)
+                <input type="radio" name="att18" value="NA" id="att18" checked="checked"/> Don't Know
+                <br /><br />
 
-                    <label>12. If in textbooks I saw that the female body was presented only to show how it differed from the male I would regard this as biased.</label><br />
-                    <input type="radio" name="att19" value="0" id="att19"/> 0 (strongly disagree)
-                    <input type="radio" name="att19" value="1" id="att19"/> 1
-                    <input type="radio" name="att19" value="2" id="att19"/> 2
-                    <input type="radio" name="att19" value="3" id="att19"/> 3
-                    <input type="radio" name="att19" value="4" id="att19"/> 4
-                    <input type="radio" name="att19" value="5" id="att19"/> 5 (strongly agree)
-                    <input type="radio" name="att19" value="NA" id="att19" checked="checked"/> Don't Know
-                    <br /><br />
+                <label>19. If in textbooks I saw that the female body was presented only to show how it differed from the male I would regard this as biased.</label><br />
+                <input type="radio" name="att19" value="0" id="att19"/> 0 (strongly disagree)
+                <input type="radio" name="att19" value="1" id="att19"/> 1
+                <input type="radio" name="att19" value="2" id="att19"/> 2
+                <input type="radio" name="att19" value="3" id="att19"/> 3
+                <input type="radio" name="att19" value="4" id="att19"/> 4
+                <input type="radio" name="att19" value="5" id="att19"/> 5 (strongly agree)
+                <input type="radio" name="att19" value="NA" id="att19" checked="checked"/> Don't Know
+                <br /><br />
 
-                    <label>13. I believe anatomy courses should address gender issues explicitly. </label><br />
-                    <input type="radio" name="att20" value="0" id="att20"/> 0 (strongly disagree)
-                    <input type="radio" name="att20" value="1" id="att20"/> 1
-                    <input type="radio" name="att20" value="2" id="att20"/> 2
-                    <input type="radio" name="att20" value="3" id="att20"/> 3
-                    <input type="radio" name="att20" value="4" id="att20"/> 4
-                    <input type="radio" name="att20" value="5" id="att20"/> 5 (strongly agree)
-                    <input type="radio" name="att20" value="NA" id="att20" checked="checked"/> Don't Know
-                    <br /><br />
+                <label>20. I believe anatomy courses should address gender issues explicitly. </label><br />
+                <input type="radio" name="att20" value="0" id="att20"/> 0 (strongly disagree)
+                <input type="radio" name="att20" value="1" id="att20"/> 1
+                <input type="radio" name="att20" value="2" id="att20"/> 2
+                <input type="radio" name="att20" value="3" id="att20"/> 3
+                <input type="radio" name="att20" value="4" id="att20"/> 4
+                <input type="radio" name="att20" value="5" id="att20"/> 5 (strongly agree)
+                <input type="radio" name="att20" value="NA" id="att20" checked="checked"/> Don't Know
+                <br /><br />
 
-                    <label>14. I believe it is important that anatomy educators pay attention to inequity in classroom processes. </label><br />
-                    <input type="radio" name="att21" value="0" id="att21"/> 0 (strongly disagree)
-                    <input type="radio" name="att21" value="1" id="att21"/> 1
-                    <input type="radio" name="att21" value="2" id="att21"/> 2
-                    <input type="radio" name="att21" value="3" id="att21"/> 3
-                    <input type="radio" name="att21" value="4" id="att21"/> 4
-                    <input type="radio" name="att21" value="5" id="att21"/> 5 (strongly agree)
-                    <input type="radio" name="att21" value="NA" id="att21" checked="checked"/> Don't Know
-                    <br /><br />
+                <label>21. I believe it is important that anatomy educators pay attention to inequity in classroom processes. </label><br />
+                <input type="radio" name="att21" value="0" id="att21"/> 0 (strongly disagree)
+                <input type="radio" name="att21" value="1" id="att21"/> 1
+                <input type="radio" name="att21" value="2" id="att21"/> 2
+                <input type="radio" name="att21" value="3" id="att21"/> 3
+                <input type="radio" name="att21" value="4" id="att21"/> 4
+                <input type="radio" name="att21" value="5" id="att21"/> 5 (strongly agree)
+                <input type="radio" name="att21" value="NA" id="att21" checked="checked"/> Don't Know
+                <br /><br />
 
-                    <label>We may want to do research like this again in the future and if so you may be invited to participate. To ensure that we can match your responses we need a code that is unique to you but that cannot be used to identify you personally. Please provide your first initial, the last letter of your last name, the first initial of your mother's maiden name, and your day and month of birth.
-                    <br /><br />
-                    For example, if your name was Joan Smith, you were born on the 25/12/1984, and your Mother's madien name was Taylor your code would be <b>JHT2512</b></label>
-                    <br /><br />
-                    First Initial:
-                    <select name="fi" id="fi">
-                        <option value="NA">NA</option>
-                        <option value="a">a</option>
-                        <option value="b">b</option>
-                        <option value="c">c</option>
-                        <option value="d">d</option>
-                        <option value="e">e</option>
-                        <option value="f">f</option>
-                        <option value="g">g</option>
-                        <option value="h">h</option>
-                        <option value="i">i</option>
-                        <option value="j">j</option>
-                        <option value="k">k</option>
-                        <option value="l">l</option>
-                        <option value="m">m</option>
-                        <option value="n">n</option>
-                        <option value="o">o</option>
-                        <option value="p">p</option>
-                        <option value="q">q</option>
-                        <option value="r">r</option>
-                        <option value="s">s</option>
-                        <option value="t">t</option>
-                        <option value="u">u</option>
-                        <option value="v">v</option>
-                        <option value="w">w</option>
-                        <option value="x">x</option>
-                        <option value="y">y</option>
-                        <option value="z">z</option>
-                    <select>
-                    Last Initial:
-                    <select name="li" id="li">
-                        <option value="NA">NA</option>
-                        <option value="a">a</option>
-                        <option value="b">b</option>
-                        <option value="c">c</option>
-                        <option value="d">d</option>
-                        <option value="e">e</option>
-                        <option value="f">f</option>
-                        <option value="g">g</option>
-                        <option value="h">h</option>
-                        <option value="i">i</option>
-                        <option value="j">j</option>
-                        <option value="k">k</option>
-                        <option value="l">l</option>
-                        <option value="m">m</option>
-                        <option value="n">n</option>
-                        <option value="o">o</option>
-                        <option value="p">p</option>
-                        <option value="q">q</option>
-                        <option value="r">r</option>
-                        <option value="s">s</option>
-                        <option value="t">t</option>
-                        <option value="u">u</option>
-                        <option value="v">v</option>
-                        <option value="w">w</option>
-                        <option value="x">x</option>
-                        <option value="y">y</option>
-                        <option value="z">z</option>
-                    <select>
-                    Maiden Initial:
-                    <select name="mi" id="mi">
-                        <option value="NA">NA</option>
-                        <option value="a">a</option>
-                        <option value="b">b</option>
-                        <option value="c">c</option>
-                        <option value="d">d</option>
-                        <option value="e">e</option>
-                        <option value="f">f</option>
-                        <option value="g">g</option>
-                        <option value="h">h</option>
-                        <option value="i">i</option>
-                        <option value="j">j</option>
-                        <option value="k">k</option>
-                        <option value="l">l</option>
-                        <option value="m">m</option>
-                        <option value="n">n</option>
-                        <option value="o">o</option>
-                        <option value="p">p</option>
-                        <option value="q">q</option>
-                        <option value="r">r</option>
-                        <option value="s">s</option>
-                        <option value="t">t</option>
-                        <option value="u">u</option>
-                        <option value="v">v</option>
-                        <option value="w">w</option>
-                        <option value="x">x</option>
-                        <option value="y">y</option>
-                        <option value="z">z</option>
-                    <select>
-                    Day of Birth:
-                    <select name="day" id="day">
-                        <option value="NA">NA</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                    <select>
-                    Month of Birth:
-                    <select name="month" id="month">
-                        <option value="NA">NA</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    <select>
+                <label>We may want to do research like this again in the future and if so you may be invited to participate. To ensure that we can match your responses we need a code that is unique to you but that cannot be used to identify you personally. Please provide your first initial, the last letter of your last name, the first initial of your mother's maiden name, and your day and month of birth.
+                <br /><br />
+                For example, if your name was Joan Smith, you were born on the 25/12/1984, and your Mother's madien name was Taylor your code would be <b>JHT2512</b></label>
+                <br /><br />
+                First Initial:
+                <select name="fi" id="fi">
+                    <option value="NA">NA</option>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                    <option value="e">e</option>
+                    <option value="f">f</option>
+                    <option value="g">g</option>
+                    <option value="h">h</option>
+                    <option value="i">i</option>
+                    <option value="j">j</option>
+                    <option value="k">k</option>
+                    <option value="l">l</option>
+                    <option value="m">m</option>
+                    <option value="n">n</option>
+                    <option value="o">o</option>
+                    <option value="p">p</option>
+                    <option value="q">q</option>
+                    <option value="r">r</option>
+                    <option value="s">s</option>
+                    <option value="t">t</option>
+                    <option value="u">u</option>
+                    <option value="v">v</option>
+                    <option value="w">w</option>
+                    <option value="x">x</option>
+                    <option value="y">y</option>
+                    <option value="z">z</option>
+                <select>
+                Last Initial:
+                <select name="li" id="li">
+                    <option value="NA">NA</option>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                    <option value="e">e</option>
+                    <option value="f">f</option>
+                    <option value="g">g</option>
+                    <option value="h">h</option>
+                    <option value="i">i</option>
+                    <option value="j">j</option>
+                    <option value="k">k</option>
+                    <option value="l">l</option>
+                    <option value="m">m</option>
+                    <option value="n">n</option>
+                    <option value="o">o</option>
+                    <option value="p">p</option>
+                    <option value="q">q</option>
+                    <option value="r">r</option>
+                    <option value="s">s</option>
+                    <option value="t">t</option>
+                    <option value="u">u</option>
+                    <option value="v">v</option>
+                    <option value="w">w</option>
+                    <option value="x">x</option>
+                    <option value="y">y</option>
+                    <option value="z">z</option>
+                <select>
+                Maiden Initial:
+                <select name="mi" id="mi">
+                    <option value="NA">NA</option>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                    <option value="e">e</option>
+                    <option value="f">f</option>
+                    <option value="g">g</option>
+                    <option value="h">h</option>
+                    <option value="i">i</option>
+                    <option value="j">j</option>
+                    <option value="k">k</option>
+                    <option value="l">l</option>
+                    <option value="m">m</option>
+                    <option value="n">n</option>
+                    <option value="o">o</option>
+                    <option value="p">p</option>
+                    <option value="q">q</option>
+                    <option value="r">r</option>
+                    <option value="s">s</option>
+                    <option value="t">t</option>
+                    <option value="u">u</option>
+                    <option value="v">v</option>
+                    <option value="w">w</option>
+                    <option value="x">x</option>
+                    <option value="y">y</option>
+                    <option value="z">z</option>
+                <select>
+                Day of Birth:
+                <select name="day" id="day">
+                    <option value="NA">NA</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                <select>
+                Month of Birth:
+                <select name="month" id="month">
+                    <option value="NA">NA</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                <select>
                 <br /><br />
 
         </fieldset><br />
