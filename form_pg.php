@@ -380,7 +380,7 @@
                         <td><input type="radio" name="att10g" value="5" id="att10g"/></td>
                     </tr>
                     <tr>
-                        <td>The genitals (male)</td>
+                        <td>The genitals (female)</td>
                        <td><input type="radio" name="att10h" value="0" id="att10h"/></td>
                         <td><input type="radio" name="att10h" value="1" id="att10h"/></td>
                         <td><input type="radio" name="att10h" value="2" id="att10h"/></td>
@@ -389,7 +389,7 @@
                         <td><input type="radio" name="att10h" value="5" id="att10h"/></td>
                     </tr>
                     <tr>
-                        <td>The genitals (female)</td>
+                        <td>The leg</td>
                        <td><input type="radio" name="att10i" value="0" id="att10i"/></td>
                         <td><input type="radio" name="att10i" value="1" id="att10i"/></td>
                         <td><input type="radio" name="att10i" value="2" id="att10i"/></td>
@@ -398,22 +398,13 @@
                         <td><input type="radio" name="att10i" value="5" id="att10i"/></td>
                     </tr>
                     <tr>
-                        <td>The leg</td>
+                        <td>The feet</td>
                        <td><input type="radio" name="att10j" value="0" id="att10j"/></td>
                         <td><input type="radio" name="att10j" value="1" id="att10j"/></td>
                         <td><input type="radio" name="att10j" value="2" id="att10j"/></td>
                         <td><input type="radio" name="att10j" value="3" id="att10j"/></td>
                         <td><input type="radio" name="att10j" value="4" id="att10j"/></td>
                         <td><input type="radio" name="att10j" value="5" id="att10j"/></td>
-                    </tr>
-                    <tr>
-                        <td>The feet</td>
-                       <td><input type="radio" name="att10k" value="0" id="att10k"/></td>
-                        <td><input type="radio" name="att10k" value="1" id="att10k"/></td>
-                        <td><input type="radio" name="att10k" value="2" id="att10k"/></td>
-                        <td><input type="radio" name="att10k" value="3" id="att10k"/></td>
-                        <td><input type="radio" name="att10k" value="4" id="att10k"/></td>
-                        <td><input type="radio" name="att10k" value="5" id="att10k"/></td>
                     </tr>
                 </table>
 

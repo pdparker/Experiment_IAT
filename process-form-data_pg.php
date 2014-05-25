@@ -36,7 +36,6 @@
     $att10h=$_POST['att10h'];
     $att10i=$_POST['att10i'];
     $att10j=$_POST['att10j'];
-    $att10k=$_POST['att10k'];
     $att11=$_POST['att11'];
     $att12=$_POST['att12'];
     $att13=$_POST['att13'];
@@ -68,7 +67,7 @@
     $att4a.",".$att4b.",".$att4c.",".$att4d.",".$att4e.",".
     $att5a.",".$att5b.",".$att5c.",".$att5d.",".$att5e.",".$att6a.",".$att6b.",".$att6c.",".$att6d.",".$att6e.",".
     $att7.",".$att8.",".$att9.",".
-    $att10a.",".$att10b.",".$att10c.",".$att10d.",".$att10e.",".$att10f.",".$att10g.",".$att10h.",".$att10i.",".$att10j.",".$att10k.",".
+    $att10a.",".$att10b.",".$att10c.",".$att10d.",".$att10e.",".$att10f.",".$att10g.",".$att10h.",".$att10i.",".$att10j.",".
     $att11.",".$att12.",".$att13.",".$att14.",".$att15.",".$att16.",".
     $att17a.",".$att17b.",".$att17c.",".$att17d.",".$att17e.",".$att17f.",".$att17g.",".$att17h.",".
     $att18.",".$att19.",".$att20.",".$att21.",".$code.PHP_EOL;
@@ -103,6 +102,13 @@
 
          <div class="page-header">
             <h1>Thank you for your participation. If you are interested in the outcome of this research please  <a href="mailto:rbp774@uowmail.edu.au">email</a> me.</h1> 
+<!--             <br>
+            <button id="myButton" class="btn btn-primary" >Good bye!</button>
+            <script type="text/javascript">
+                document.getElementById("myButton").onclick = function () {
+                    window.location = "http://www.uow.edu.au/";
+                };
+            </script> -->
       </div>
 </div>
 
