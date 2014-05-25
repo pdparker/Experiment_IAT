@@ -1,2 +1,4 @@
 *.jpg
 ./img/*
+IAT/templates/GenderHealthIAT/output/*
+output/*

@@ -308,7 +308,7 @@ function instructionPage()
 		//if('insertForm' in template)
 		if(true)
 		{
-			resulttext = '<form method="link" action="../form.html"><input type="submit" value="NEXT" /></form>';
+			resulttext = '<center><form action="../formFlow.php" method="POST" role="form"><label>What degree are you enrolled in?</label><select name="degree" id="degree"><option value="UG">Undergraduate</option><option value="PG">Postgraduate</option><select><br /><button type="submit">NEXT</button></form></form></center>';
 			$("#picture_frame").html(resulttext);
 		}
 		else 
